@@ -1,0 +1,76 @@
+
+<div id="search" class='CoveoSearchInterface' data-use-local-storage-for-history='true' appCoveohook>
+    <div class="CoveoAnalytics"></div>
+    <div class='coveo-search-section'>
+        <!-- Any Coveo component can be removed (or added); none is actually required for the page to "load". -->
+        <div class="CoveoSearchbox" data-trigger-query-on-clear='true'></div>
+    </div>
+    <div class="coveo-tab-section">
+        <div class="CoveoTab" data-id="All" data-caption="All Content"></div>
+    </div>
+    <div class="coveo-main-section">
+        <div class="coveo-facet-column">
+            <div class="CoveoFacet" data-title="Active" data-field="@author" data-enable-settings='false'></div>
+            <div class="CoveoFacet" data-title="Role" data-field="@year" data-enable-settings='false'></div>
+        </div>
+        <div class="coveo-results-column">
+
+            <div class="CoveoPreferencesPanel">
+                <div class="CoveoResultsPreferences"></div>
+                <div class="CoveoResultsFiltersPreferences"></div>
+            </div>
+            <div class="CoveoTriggers"></div>
+            <div class="CoveoHiddenQuery"></div>
+            <div class="CoveoDidYouMean"></div>
+            <div class="CoveoErrorReport" data-pop-up="false"></div>
+            <div class="CoveoResultList" data-layout="list" data-wait-animation="fade" >
+                <script class='result-template' type='text/html' id="default">
+                    <div class="coveo-result-frame">
+                        <div class="coveo-result-cell" style="vertical-align:top;text-align:center;width:32px;">
+                          <span class="CoveoIcon" data-small="true" data-with-label="false"></span>
+                          <div class="CoveoQuickview"></div>
+                        </div>
+                        <div class="coveo-result-cell" style="vertical-align: top;padding-left: 16px;">
+                          <div class="coveo-result-row" style="margin-top:0;">
+                            <div class="coveo-result-cell" style="vertical-align:top;font-size:16px;" role="heading" aria-level="2">
+                              <a class="CoveoResultLink"></a>
+                            </div>
+                            <div class="coveo-result-cell" style="width:120px;text-align:right;font-size:12px">
+                              <div class="coveo-result-row">
+                                <span class="CoveoFieldValue" data-field="@date" data-helper="date"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="coveo-result-row" style="margin-top:10px;">
+                            <div class="coveo-result-cell">
+                              <span class="CoveoExcerpt"></span>
+                            </div>
+                          </div>
+                          <div class="coveo-result-row" style="margin-top:10px;">
+                            <div class="coveo-result-cell">
+                              <span class="CoveoFieldValue" data-field="@author" data-text-caption="Author" style="margin-right:30px;"></span>
+                              <span class="CoveoFieldValue" data-field="@source" data-text-caption="Source" style="margin-right:30px;"></span>
+                              <span class="CoveoFieldValue" data-field="@language" data-text-caption="Language" style="margin-right:30px;"></span>
+                              <span class="CoveoFieldValue" data-field="@filetype" data-text-caption="File Type" style="margin-right:30px;"></span>
+                            </div>
+                          </div>
+                          <div class="coveo-result-row" style="margin-top:10px;">
+                            <div class="coveo-result-cell">
+                              <div class="CoveoPrintableUri"></div>
+                            </div>
+                          </div>
+                          <div class="coveo-result-row">
+                            <div class="coveo-result-cell">
+                              <div class="CoveoMissingTerms"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="coveo-bottom">
+        <div class="CoveoPager"></div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+/* tab section */
+#search > div.coveo-tab-section, #search > div.coveo-main-section > div.coveo-facet-column > div > div.coveo-facet-header{
+    background-color: transparent;
+}
+#search > div.coveo-main-section > div.coveo-facet-column > div {
+    background-color: transparent;
+    border: none;
+
+}
